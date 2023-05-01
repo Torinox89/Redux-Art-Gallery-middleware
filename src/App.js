@@ -14,7 +14,7 @@ function App(props) {
   const data = useSelector((state) => state.data);
 
   const renderImg = () => {
-    if (data.apiData.primaryImage) {
+    if (data.apiData?.primaryImage) {
       return (
         <img
           style={{ width: "100vw" }}
@@ -46,7 +46,7 @@ function App(props) {
         }}
       />
       <div>
-        {data.objectId}
+        Art Id:{data.objectId}
         {renderImg()}
       </div>
     </div>
